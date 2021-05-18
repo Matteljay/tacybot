@@ -17,6 +17,7 @@ Donate if you find this app useful, fun, educational or you like to motivate mor
     LTO:  3JsaBxroCFW6xQzkeq38bRAjhwgsjr8ZegE
     BNB:  bnb1qvzenk3w9sfj5mgtqwsg0ph5m2x9m27x4krkgn
     BSC:  0x42DFc3B1c4f9f60c02846510Bd7e73a3aA22B376
+    SCRT: secret1z2nv32clzqzz98ycqwmplfg5cu50ud9rhjj2gx
 
 ## Other methods
 
