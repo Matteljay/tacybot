@@ -37,24 +37,24 @@ Introduction video: [libersystems.com](https://libersystems.com/uploads/videos/t
 
 ## Usage
 
-This section has documentation for the end-user. To install and use the source code yourself, go to the [Installation section](#installation).
+This section has documentation for the end-user. To install and use the source code yourself, go to the [Installation section](#installation). Request an account on [tacy.libersystems.com](https://tacy.libersystems.com/). Wait for it to get approved or send an e-mail to *matteljay [at] pm [dot] me*.
 
 ### Dashboard
 
-Request an account on [tacy.libersystems.com](https://tacy.libersystems.com/). Wait for it to get approved or send an e-mail to *matteljay [at] pm [dot] me*. After logging in you get forwarded to your personal price ticker dashboard. Here you can add cryptocurrency pairs. The abbreviations like *LTCUSDT* can be found on [binance.com/en/markets](https://www.binance.com/en/markets), use these in the *Add pair* dialog. Several different pages with different pairs can be added to your personal dashboard. These steps are also shown in the introduction video above. Note that contrary to other crypto price listings, on TacyBot the prices are presented in [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation). That way the amount of information you get per price is constant. For example, a price of *0.00003* is hard to quantify and has less data than *3.246e-5*. A price of *35742* has too much data, *3.574e+4* removes some irrelevancy.
+After logging in you get forwarded to your personal price ticker dashboard. Here you can add cryptocurrency pairs. The abbreviations like *LTCUSDT* can be found on [binance.com/en/markets](https://www.binance.com/en/markets), use these in the *Add pair* dialog. Several different pages with different pairs can be added to your personal dashboard. These steps are also shown in the introduction video above. Note that contrary to other crypto price listings, TacyBot lists the prices in [scientific notation](https://en.wikipedia.org/wiki/Scientific_notation). That way the amount of information you get per price is constant. For example, a price of *0.00003* is hard to quantify and has less data than *3.246e-5*. A price of *35742* has too much data, *3.574e+4* removes some irrelevancy.
 
 ### User Info
 
-To open the menu pane by clicking the 3-bar symbol (hamburger icon) in the upper right corner. Then click *User Info*. TacyBot includes a flexible user account management screen. Here you can change your optional *display name*. Your password is needed to confirm the change. If you click *Change Login Credentials*, you can even change your e-mail address and password. Again, your old password is required to confirm this.
+Open the menu pane by clicking the 3-bar symbol (hamburger icon) in the upper right corner. Then click *User Info*. TacyBot includes a flexible user account management section. Here you can change your optional *Display name*. Your password is needed to confirm the change. If you click *Change Login Credentials*, you can even change your e-mail address and password. Again, your old password is required to confirm this.
 
 ### Trader
 
-On the menu pane, click *Trader*. This page enables you to get your Binance wallet contents and enables advanced stand-alone trading by the TacyBot server back-end. To enable this, first your trading account on Binance needs to be configured correctly. Generate and API key pair (label & secret), as is explained in the introduction video. The important page can be accessed on your account page as shown here, make sure to check the same permission boxes and IP privileges option.
+On the menu pane, click *Trader*. This page enables you to get your Binance wallet contents and enables advanced stand-alone trading by the TacyBot server back-end. To enable this, first your trading account on Binance needs to be configured correctly. Generate an API key pair (label & secret), as is explained in the introduction video. Your Binance keys can be accessed on your account page as shown here, make sure to check the same permission boxes and *IP privileges* option.
 
 ![apikey](screenshots/apikey.png)
 
 TacyBot requires you to copy-paste the key pair into the Trader dialog. For this, open the *keys* symbol and paste the keys there. Now you can load your Binance wallet balance quickly & easily.
-Additionally, you now enabled the option to perform advanced automated trades. For every trade you write, it is important to **round** the volume you use as much as possible. Otherwise Binance will throw obscure errors such as *LOT_SIZE*. These are pretty harmless but may result in your order failing to trigger at the time you want. To understand such error messages, Binance provides and explanation on their [API documentation](https://binance-docs.github.io/apidocs/spot/en/#filters).
+Additionally, you now enabled the option to perform advanced automated trades. For every trade you write, it is important to **round** the volume you use as much as possible. Otherwise Binance will throw obscure errors such as *LOT_SIZE*. These are pretty harmless but may result in your order failing to trigger at the time and market conditions you wanted. To understand such error messages, Binance provides and explanation on their [API documentation](https://binance-docs.github.io/apidocs/spot/en/#filters).
 
 There are four different types of trades possible, every time the *ETHUSDT* pair is used as an example here.
 - Instant market (mkt)
@@ -85,7 +85,7 @@ There are four different types of trades possible, every time the *ETHUSDT* pair
 *SELLING:* Sell [volume] amount of ETH if lower [enterPrice] in USDT is reached, then BUY back ETH if the price rises above [percentage] of the lowest peek price. Useful for trading breakdown below price resistance.
 
 
-When the order is waiting to get executed, it is colored white. When the order finished successfully, it gets colored green. When the order finishes with an error, it is colored red and you can click the *(I)* symbol to find out why. The square symbol will manually halt and disable the trade, the trash symbol will both halt the trade and remove it from your account history.
+When the order is waiting to get executed, it is colored white. When the order finished successfully, it gets colored green. When the order finishes with an error, it is colored red and you can click the *(i)* symbol to find out why. The square symbol will manually halt and disable the trade, the trash symbol will both halt the trade and remove it from your account history.
 
 ## Installation
 
@@ -105,7 +105,7 @@ For a more trustworthy environment, you definitely should enable SSL/TLS and per
 
 ## Technical details
 
-TacyBot's front-end is a responsive and routerless [SPA](https://en.wikipedia.org/wiki/Single-page_application). It connects both via encrypted WebSocket as well as regular Rest API via Axios to establish communication lines between 3 parties: front-end, back-end and Binance server. A complete user management system is included with some basic spam protections. The user is able to manage their own private data completely. A high degree of privacy is respected via both client-side and server-side password hashing & salting before storing in NeDB.
+TacyBot's front-end is a responsive and routerless [SPA](https://en.wikipedia.org/wiki/Single-page_application). It connects both via encrypted WebSocket as well as regular Rest API via Axios to establish communication lines between 3 parties: front-end, back-end and Binance server. A complete user management system is included with some basic spam protections. The user is able to manage their own private data completely. A high degree of login privacy is respected via both client-side and server-side password hashing & salting before storing in NeDB.
 
 Technologies used:
 - VueJS modern JavaScript framework

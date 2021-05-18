@@ -1,7 +1,7 @@
 # Contact Info
 
 - Author: Matteljay
-- E-mail: Matteljay [at] pm [dot] me
+- E-mail: matteljay [at] pm [dot] me
 
 Donate if you find this app useful, fun, educational or you like to motivate more projects like this.
 
