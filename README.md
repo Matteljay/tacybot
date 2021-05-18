@@ -58,32 +58,17 @@ Additionally, you now enabled the option to perform advanced automated trades. F
 
 There are four different types of trades possible, every time the *ETHUSDT* pair is used as an example here.
 - Instant market (mkt)
-
-*BUYING:* Instantly buy [volume] amount of ETH
-
-*SELLING:* Instantly sell [volume] amount of ETH
-
-
+-- *BUYING:* Instantly buy [volume] amount of ETH
+-- *SELLING:* Instantly sell [volume] amount of ETH
 - Market-if-touched (mit)
-
-*BUYING:* Buy [volume] amount of ETH if higher [enterPrice] in USDT is reached
-
-*SELLING:* Sell [volume] amount of ETH if lower [enterPrice] in USDT is reached
-
-
+-- *BUYING:* Buy [volume] amount of ETH if higher [enterPrice] in USDT is reached
+-- *SELLING:* Sell [volume] amount of ETH if lower [enterPrice] in USDT is reached
 - Trailing market (tmkt)
-
-*BUYING:* Buy [volume] amount of ETH if the price rises above [percentage] of the lowest peek price. Use this if you want to buy ETH but you want to wait and see how low the price can go.
-
-*SELLING:* Sell [volume] amount of ETH if the price falls below [percentage] of the highest peek price. Use this if you want to sell ETH but you want to wait and see how high the price can go.
-
-
+-- *BUYING:* Buy [volume] amount of ETH if the price rises above [percentage] of the lowest peek price. Use this if you want to buy ETH but you want to wait and see how low the price can go.
+-- *SELLING:* Sell [volume] amount of ETH if the price falls below [percentage] of the highest peek price. Use this if you want to sell ETH but you want to wait and see how high the price can go.
 - Trailing market-if-touched (tmit)
-
-*BUYING:* Buy [volume] amount of ETH if higher [enterPrice] in USDT is reached, then SELL back to USDT if the price drops below [percentage] of the highest peek price. Useful for trading breakouts above price resistance.
-
-*SELLING:* Sell [volume] amount of ETH if lower [enterPrice] in USDT is reached, then BUY back ETH if the price rises above [percentage] of the lowest peek price. Useful for trading breakdown below price resistance.
-
+-- *BUYING:* Buy [volume] amount of ETH if higher [enterPrice] in USDT is reached, then SELL back to USDT if the price drops below [percentage] of the highest peek price. Useful for trading breakouts above price resistance.
+-- *SELLING:* Sell [volume] amount of ETH if lower [enterPrice] in USDT is reached, then BUY back ETH if the price rises above [percentage] of the lowest peek price. Useful for trading breakdown below price resistance.
 
 When the order is waiting to get executed, it is colored white. When the order finished successfully, it gets colored green. When the order finishes with an error, it is colored red and you can click the *(i)* symbol to find out why. The square symbol will manually halt and disable the trade, the trash symbol will both halt the trade and remove it from your account history.
 
