@@ -1,4 +1,4 @@
-FROM node:15-alpine
+FROM node:alpine
 WORKDIR /usr/src/app
 COPY server /usr/src/app
 RUN npm ci --only=production
