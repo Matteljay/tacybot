@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+
+    tacy: 
+        image: matteljay/tacybot
+        container_name: tacy
+        restart: always
+        user: node
+        environment:
+            EXPRESS_PORT: 5000
+            JWT_SECRET: CHANGE_ME
+            JWT_EXPIRE: 125h
+            USER_PW_SALT: CHANGE_ME
+        volumes:
+            - ./tacy-db:/usr/src/app/db
