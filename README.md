@@ -96,7 +96,7 @@ A modern VPS should already have [Docker](https://docs.docker.com/engine/install
 mkdir -p tacybot/tacy-db
 chown 1000:1000 tacybot/tacy-db
 cd tacybot/
-wget https://github.com/Matteljay/tacybot/blob/master/docker-compose.yml
+wget https://github.com/Matteljay/tacybot/raw/main/docker-compose.yml
 docker-compose up -d
 ```
 A TacyBot demo should now be available from the internet at `http://your-server-ip:5000`. The first user you add will automatically become the approved administrator. You will notice the *Admin* page on your menu pane. The admin account has the ability to approve new users or reset passwords for other users.
