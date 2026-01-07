@@ -6,7 +6,6 @@
 - Author: Matteljay
 - Language: Vue/JavaScript
 - IDE: Visual Studio Code
-- Homepage: https://libersystems.com
 
 ## Table of contents
 
@@ -23,9 +22,9 @@
 ## About
 
 TacyBot is a cryptocurrency trading platform written in [Vue.JS](https://vuejs.org/). With the full stack implementation, TacyBot can automatically execute advanced trades in the background. Buy and sell triggers are based on current market conditions and will be automatically executed using your [Binance.com account](https://accounts.binance.com). A custom portfolio builder is included so you can monitor the real-time prices of your custom selection of assets. With one click, a price chart with daily price candles is generated for your preferred cryptocurrency. It was loosely inspired by the functionality of [3Commas](https://3commas.io/). But this is a completely open source version that you can audit and run in a standalone way on any [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) as a Docker micro-service.
-A user account management system is included so that multiple users can be accommodated from one server. The application is already running live here: [tacy.libersystems.com](https://tacy.libersystems.com), it is a responsive and mobile friendly web-app. You can start by requesting an account. DISCLAIMER: all trading activities are done at your own risk, no guarantee of any kind is given.
+A user account management system is included so that multiple users can be accommodated from one server. DISCLAIMER: all trading activities are done at your own risk, no guarantee of any kind is given.
 
-Introduction video: [libersystems.com](https://files.libersystems.com/share/SVGbL4iG) [bitchute.com](https://www.bitchute.com/video/WjvXxP5b27QZ/)
+Introduction video: [bitchute.com](https://www.bitchute.com/video/WjvXxP5b27QZ/)
 
 ## Screenshots
 
@@ -36,8 +35,6 @@ Introduction video: [libersystems.com](https://files.libersystems.com/share/SVGb
 ![Trades](screenshots/trades.png)
 
 ## Usage
-
-This section has documentation for the end-user. To install and use the source code yourself, go to the [Installation section](#installation). Request an account on [tacy.libersystems.com](https://tacy.libersystems.com/). Wait for it to get approved or send an e-mail to *matteljay [at] pm [dot] me*.
 
 ### Dashboard
 
@@ -74,7 +71,7 @@ When the order is waiting to get executed, it is colored white. When the order f
 
 ## Installation
 
-Instead of using [tacy.libersystems.com](https://tacy.libersystems.com/), you can also run it on your own server. It is assumed you're already a server admin and manage your own VPS. This section explains how to install TacyBot using Docker and will run it as a micro-service that you can tweak via the [docker-compose.yml](docker-compose.yml).
+It is assumed you're already a server admin and manage your own VPS. This section explains how to install TacyBot using Docker and will run it as a micro-service that you can tweak via the [docker-compose.yml](docker-compose.yml).
 
 A modern VPS should already have [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) installed. These few commands offer the fastest startup & working demonstration.
 ```
